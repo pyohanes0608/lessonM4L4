@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form feedback</title>
+    <style>
+        body {
+            background-color: #392657;
+         }
+        
+    </style>
+</head>
+<body>
+    {% block content %}
+    <h1>Thank you for the feedback!</h1>
+    <p>Your Email: {{ email }}</p>
+    <p>Your Comment: {{ text }}</p>
+    {% endblock %}
+</body>
+</html>
